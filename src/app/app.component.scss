@@ -1,29 +1,47 @@
-mat-sidenav-content {
-  position: relative;
-  top: 0;
-  left: 0; 
-  width: 100%;
-  height: 5rem;
-}
-
-mat-sidenav {
-  height: 100vh; 
-  background: grey;
-  color: white;
-  min-width: 10rem;
-}
-
 mat-sidenav-container {
   height: 100vh;
   width: 100vw;
+  mat-sidenav-content {
+    position: relative;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 5rem;
+  }
 
-  .title {
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2rem;
-    padding: 1rem;
-    border-bottom: .1rem solid white;
+  mat-sidenav {
+    height: 100vh; 
+    background: grey;
+    color: white;
+    min-width: 10rem;
+
+    .title {
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2rem;
+      padding: 1rem;
+      border-bottom: .1rem solid white;
+    }
+
+    mat-list-item {
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      
+      .mat-list-item-content {
+        justify-content: flex-start;
+        padding: 0;
+      }
+      
+      a {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-transform: capitalize;
+      }
+    }
   }
 }
