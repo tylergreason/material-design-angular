@@ -1,26 +1,31 @@
 <mat-sidenav-container>
   <mat-sidenav #drawer mode="cover">
-    <div class="title">The App</div>
-<mat-list-item>
-  <a mat-button href="home">
-    <mat-icon>home</mat-icon>
-    Home
-  </a>
-</mat-list-item>
-<mat-list-item>
-  <a mat-button href="navigation">
-    <mat-icon>navigation</mat-icon>
-    navigation
-  </a>
-</mat-list-item>
-
-  </mat-sidenav>
+    <div class="title">
+      <mat-icon>arrow_circle_down</mat-icon>
+      The App
+    </div>
+    <mat-list-item>
+      <a mat-button href="home">
+        <mat-icon>home</mat-icon>
+        Home
+      </a>
+    </mat-list-item>
+    <mat-list-item>
+      <a mat-button href="navigation">
+        <mat-icon>navigation</mat-icon>
+        navigation
+      </a>
+    </mat-list-item>
+ </mat-sidenav>
 
   <mat-sidenav-content>
-      <mat-icon mat-button (click)="drawer.toggle()">menu</mat-icon>
-      <mat-list>
-        <mat-list-item>item 1</mat-list-item>
-      </mat-list>
+    <button mat-button (click)="drawer.toggle()">
+      <mat-icon class="icon-menu" mat-button>menu</mat-icon>
+    </button>
+    <div class="title">
+      <mat-icon>arrow_circle_down</mat-icon>
+      The App
+    </div>
   </mat-sidenav-content>
   <router-outlet></router-outlet>
 </mat-sidenav-container>

@@ -9,28 +9,36 @@ mat-sidenav-container {
     height: 5rem;
   }
 
+  .title {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 1rem;
+    mat-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      transform: rotate(225deg);
+      margin-right: .5rem;
+    }
+  }
+
   mat-sidenav {
     height: 100vh; 
     background: grey;
     color: white;
     min-width: 10rem;
 
-    .title {
-      font-size: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 2rem;
-      padding: 1rem;
-      border-bottom: .1rem solid white;
-    }
 
     mat-list-item {
       height: 3rem;
       display: flex;
       align-items: center;
       width: 100%;
-      
+
       .mat-list-item-content {
         justify-content: flex-start;
         padding: 0;
@@ -42,6 +50,23 @@ mat-sidenav-container {
         justify-content: space-between;
         text-transform: capitalize;
       }
+    }
+  }
+
+  mat-sidenav-content {
+    background-color: lightgrey;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+    button {
+      height: 100%;
+    }
+
+    icon-menu {
+      $dimensions: 20rem;
+      height: $dimensions;
+      width: $dimensions;
     }
   }
 }
