@@ -1,1 +1,14 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+  <mat-sidenav #drawer mode="cover" open>
+    <p>example</p>
+    <p>text</p>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle Drawer
+    </button>
+    Content
+  </mat-sidenav-content>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
