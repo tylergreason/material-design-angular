@@ -16,4 +16,14 @@ mat-sidenav {
 mat-sidenav-container {
   height: 100vh;
   width: 100vw;
+
+  .title {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 1rem;
+    border-bottom: .1rem solid white;
+  }
 }

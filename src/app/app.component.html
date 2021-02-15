@@ -1,14 +1,13 @@
 <mat-sidenav-container>
-  <mat-sidenav #drawer mode="cover" open>
-    <p>example</p>
-    <p>text</p>
+  <mat-sidenav #drawer mode="cover">
+    <div class="title">The App</div>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle Drawer
-    </button>
-    Content
+      <mat-icon mat-button (click)="drawer.toggle()">menu</mat-icon>
+      <mat-list>
+        <mat-list-item>item 1</mat-list-item>
+      </mat-list>
   </mat-sidenav-content>
   <router-outlet></router-outlet>
 </mat-sidenav-container>
