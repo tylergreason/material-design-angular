@@ -1,0 +1,16 @@
+<mat-sidenav-container>
+
+  <mat-sidenav #drawer mode="side" closed>
+    <p>example</p>
+    <p>text</p>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    Content
+    <br>
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle Drawer
+    </button>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
