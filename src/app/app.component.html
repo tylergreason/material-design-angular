@@ -1,4 +1,5 @@
 <mat-sidenav-container>
+
   <mat-sidenav #drawer mode="cover">
     <div class="title">
       <mat-icon>arrow_circle_down</mat-icon>
@@ -16,16 +17,20 @@
         navigation
       </a>
     </mat-list-item>
- </mat-sidenav>
+  </mat-sidenav>
 
   <mat-sidenav-content>
-    <button mat-button (click)="drawer.toggle()">
-      <mat-icon class="icon-menu" mat-button>menu</mat-icon>
-    </button>
-    <div class="title">
-      <mat-icon>arrow_circle_down</mat-icon>
-      The App
+    <div class="top-bar">
+      <button mat-button (click)="drawer.toggle()">
+        <mat-icon class="icon-menu" mat-button>menu</mat-icon>
+      </button>
+      <div class="title">
+        <mat-icon>arrow_circle_down</mat-icon>
+        The App
+      </div>
     </div>
+    
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
-  <router-outlet></router-outlet>
+
 </mat-sidenav-container>
