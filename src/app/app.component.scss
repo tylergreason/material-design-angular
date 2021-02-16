@@ -23,6 +23,10 @@ mat-sidenav-container {
         height: 100%;
       }
     }
+
+    #content {
+      padding: 2rem;
+    }
   }
 
   .title {
@@ -67,9 +71,5 @@ mat-sidenav-container {
         text-transform: capitalize;
       }
     }
-  }
-
-  mat-sidenav-content {
-
   }
 }

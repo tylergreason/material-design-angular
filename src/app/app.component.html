@@ -12,6 +12,12 @@
       </a>
     </mat-list-item>
     <mat-list-item>
+      <a mat-button href="products">
+        <mat-icon>shopping_bag</mat-icon>
+        Products
+      </a>
+      </mat-list-item>
+      <mat-list-item>
       <a mat-button href="navigation">
         <mat-icon>navigation</mat-icon>
         navigation
@@ -29,8 +35,9 @@
         The App
       </div>
     </div>
-    
-    <router-outlet></router-outlet>
+    <div id="content">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 
 </mat-sidenav-container>
