@@ -1,7 +1,19 @@
+.products-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 mat-card {
+  margin: 1rem;
   max-width: 300px;
 
   mat-card-title {
     text-transform: capitalize;
+  }
+
+  img {
+    $dimensions: 250px;
+    max-height: $dimensions;
+    object-fit: cover;
   }
 }

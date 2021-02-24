@@ -2,19 +2,22 @@
   products works!
 </p>
 
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>
-      header
-    </mat-card-title>
-    <mat-card-subtitle>
-      subtitle
-    </mat-card-subtitle>
-  </mat-card-header>
-
-  <img mat-card-image src="https://picsum.photos/300">
-
-  <mat-card-content>
-    <p>{{loremIpsum(60)}}</p>
-  </mat-card-content>
-</mat-card>
+<div class="products-container">
+  <mat-card *ngFor="let product of productsList">
+    <mat-card-header>
+      <mat-card-title>
+        {{product.name}}
+      </mat-card-title>
+      <mat-card-subtitle>
+        {{product.header}}
+      </mat-card-subtitle>
+    </mat-card-header>
+    <div class="img-container">
+      <img mat-card-image src="{{product.imageUrl}}">
+    </div>
+    
+    <mat-card-content>
+      <p>{{product.desc}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
